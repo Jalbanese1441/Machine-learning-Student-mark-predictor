@@ -1,0 +1,72 @@
+Welcome to the Mark Predictor. This program was created by Jacob Albanese.
+Make sure that this document and the program are in full screen mode
+You will need the following in order for this program to work:
+pip 20.0.2 or newer
+(You can check by typing “pip -V” into cmd)
+Pickle 4.0 or newer 
+(Comes with python. You can check by typing “import pickle” then “print(pickle.format_version)” into a python terminal or IDLE)
+
+Python 3.7 to 3.7.6 (Not 3.8 or above) ( type “python ––version” into cmd)
+(I recommend 3.7.6)
+Conda 4.8.2 
+(you might need to add to your windows environment variables)
+(check by typing “conda -V” into cmd)
+Anaconda 2020.02 
+(you might need to add to your windows environment variables)
+(check by typing “conda list anaconda$” into cmd)
+
+A decent computer, i.e not a Laptop 
+
+A fast internet connection (wired). If your internet is to slow (like mine) the program may not be able to install all of the files on time.
+If you see “Done!” on your screen while the program is clearly still downloading files then you may have encountered an error. There are three things that you can do:
+
+1) Wait 10 to 15 minutes, just walk away from your computer. Come back and if the only window open is the program saying it’s done then you should be good to go (you might encounter errors down the line) * Recommended
+
+2) If a done.setup file is in the folder delete it. Create another virtual environment and run “pip install --ignore-installed --upgrade tensorflow==2.0.0”.
+That will install tensorflow to your pc. Then relaunch the program, your computer should recognise that tensorflow is installed and be able to copy it into program’s virtual environment. You will need to type “y” into the open window when asked if you want to overwrite the environment (and press enter). You will need to be quick on this step. Then rerun the program.
+
+
+3)If a done.setup file is in the folder delete it, then install all of the packages manually. Then rerun the program.
+You may have to type “n” and press enter to prevent the program from trying to reinstall the files.
+
+This program needs to be run from a reasonably fast storage median. I have encountered errors when running off a USB so I would recommend a sata SSD or better.
+
+One you have all of that and checking it in cmd gives you no error, close this file, type “done” and press enter in the program
+
+If you do not meet any of these requirements type “exit” into the program and hit enter 
+
+Also if you have deleted or modified an of the file that came with the program it probably wont work
+
+Note: This program runs in a virtual environment (Conda) so it will not affect any of your other python files
+
+Note: If you plan on reinstalling or moving the program between computers make a backup of the CCA folder before running the program. Once the program has run you will not be able to reinstall the program from within the program. You have to delete the program folder and reinstall from the backup, also you will need to run “conda env remove -n JacobCCA” to remove the virtual environment before reinstalling on the same computer.
+
+
+If the program does not work, you will have to install and verify the following manually:
+
+1) Create a virtual Conda environment with your version of python (3.7.x, but I recommend 3.7.6)
+2) Call it “JacobCCA”
+3) “pip install --ignore-installed --upgrade tensorflow==2.2.0”
+4) Test is using “import tensorflow as tf; print(tf.__version__)”
+5) Pip install the folowing:
+numpy == 1.18.1
+Keras==2.3.1
+sklearn==0.0
+pandas == 1.0.3
+
+Also: Verify that the following files are in the folder
+studentData.csv
+startTrainer.vbs"
+start_conda_environment.bat
+python modelTrainer.py
+closeCodaTerminal.vbs
+gradeModelPredictor.py
+startPredictor.vbs
+setup.py
+start.vbs
+startup.txt
+Students.pickle
+requirements.txt
+createCondaEnvironment.bat
+finishSetUp.bat
+ MarkPredictor.py
